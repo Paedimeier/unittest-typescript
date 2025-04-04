@@ -8,3 +8,12 @@ test("test mean of two numbers", () => {
 
   expect(actual).toBe(expected);
 });
+
+test("test mean of five numbers", () => {
+  const numbers: number[] = [1, 2, 3, 4, 5];
+  const expected: number = 3;
+
+  const actual: number = mean(numbers);
+
+  expect(actual).toBe(expected);
+});
