@@ -25,3 +25,16 @@ test("subtract four from six is two", () => {
   // Assert
   expect(actual).toBe(expected);
 });
+
+test("multiply 3 times 5", () => {
+  // Arrange
+  const a: number = 3;
+  const b: number = 5;
+  const expected: number = 15;
+
+  // Act
+  const actual: number = multiply(a, b);
+
+  // Assert
+  expect(actual).toBe(expected);
+});
