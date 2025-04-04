@@ -52,14 +52,11 @@ test("divide 15 by 3 is 5", () => {
   expect(actual).toBe(expected);
 });
 
-test("divide 15 by 0 returns Infinity", () => {
+test("divide 15 by 0 throws error", () => {
   // Arrange
   const a: number = 15;
   const b: number = 0;
 
-  // Act
-  const actual: number = divide(a, b);
-
-  // Assert
-  expect(actual).toBe(Infinity);
+  // Act & Assert
+  expect(() => divide(a, b)).toThrowError("Division by zero is not allowed!");
 });
