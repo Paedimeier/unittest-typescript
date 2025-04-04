@@ -1,4 +1,3 @@
-import { mean } from "./average";
 import { median } from "./median";
 
 describe("median", () => {

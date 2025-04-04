@@ -1,5 +1,3 @@
-import { mean } from "./average";
-
 export function median(numbers: number[]): number {
   if (numbers.length === 0) {
     throw new Error("Cannot calculate median of an empty list.");
