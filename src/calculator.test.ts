@@ -51,3 +51,15 @@ test("divide 15 by 3 is 5", () => {
   // Assert
   expect(actual).toBe(expected);
 });
+
+test("divide 15 by 0 returns Infinity", () => {
+  // Arrange
+  const a: number = 15;
+  const b: number = 0;
+
+  // Act
+  const actual: number = divide(a, b);
+
+  // Assert
+  expect(actual).toBe(Infinity);
+});

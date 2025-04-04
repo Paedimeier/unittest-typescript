@@ -11,5 +11,8 @@ export function multiply(faktor1: number, faktor2: number): number {
 }
 
 export function divide(dividend: number, divisor: number): number {
+  if (divisor === 0) {
+    return Infinity;
+  }
   return dividend / divisor;
 }
